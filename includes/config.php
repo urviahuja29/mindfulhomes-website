@@ -15,6 +15,6 @@ return [
         'image/png',
         'image/webp',
     ],
-    'openai_model' => 'gpt-5.4',
+    'openai_model' => 'gpt-5.4-mini',
     'openai_api_key' => getenv('OPENAI_API_KEY') ?: $fallbackApiKey,
 ];
