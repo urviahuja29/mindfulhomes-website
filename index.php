@@ -161,10 +161,12 @@ if (
                         <textarea id="description" name="description" rows="5" placeholder="Describe what feels messy, what is not working, and what kind of result you want."><?= htmlspecialchars($formValues['description'], ENT_QUOTES, 'UTF-8') ?></textarea>
                         <button type="submit" data-default-label="Organize now" data-loading-label="Creating your plan...">Organize now</button>
                     </form>
-                    <?php if (is_array($organizerState['result'])): ?>
-                        <?= mindfulhomes_render_organizer_report($organizerState['result']) ?>
-                    <?php endif; ?>
                 </div>
+                <?php if (is_array($organizerState['result'])): ?>
+                    <div class="organizer-report-wrap">
+                        <?= mindfulhomes_render_organizer_report($organizerState['result']) ?>
+                    </div>
+                <?php endif; ?>
             </div>
         </section>
 

@@ -461,6 +461,10 @@ p {
   align-items: start;
 }
 
+.organizer-report-wrap {
+  grid-column: 1 / -1;
+}
+
 .organizer-section {
   border-top: 1px solid rgba(16, 20, 18, 0.05);
   border-bottom: 1px solid rgba(16, 20, 18, 0.05);
@@ -672,7 +676,7 @@ p {
 }
 
 .organizer-report {
-  margin-top: 28px;
+  margin-top: 8px;
   gap: 18px;
 }
 
@@ -979,6 +983,10 @@ p {
   .organizer-grid,
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .organizer-report-wrap {
+    grid-column: auto;
   }
 
   .process-grid {
